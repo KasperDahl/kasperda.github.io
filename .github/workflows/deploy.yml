@@ -45,13 +45,13 @@ jobs:
 
       # Step 4: Build the Angular app
       - name: Build Angular app
-        run: npm run build -- --output-path=dist/kasperda
+        run: npm run build -- --output-path=dist/kasperda/browser
 
       # Step 5: Upload build artifacts
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "./dist/kasperda"
+          path: "./dist/kasperda/browser"
 
       # Step 6: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
