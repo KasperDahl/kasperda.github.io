@@ -46,18 +46,18 @@ jobs:
 
       # Step 4: Build the Angular app
       - name: Build Angular app
-        run: npm run build -- --output-path=dist/kasperda/browser --base-href /
+        run: npm run build -- --output-path=dist/browser --base-href /
         working-directory: ./kasperda
 
       # Step 5: Copy CNAME file to the output directory
       - name: Copy CNAME file
-        run: cp CNAME dist/kasperda/browser/
+        run: cp CNAME kasperda/dist/browser/
 
       # Step 6: Upload build artifacts
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "./dist/kasperda/browser"
+          path: "./kasperda/dist/browser"
 
       # Step 7: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
