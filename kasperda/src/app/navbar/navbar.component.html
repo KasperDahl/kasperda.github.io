@@ -1,6 +1,8 @@
-<mat-toolbar>
-  <span>Kasper DA</span>
+<mat-toolbar color="primary">
+  <span>
+    <button mat-button [routerLink]="['/home']">Kasper Dahl Andersen</button>
+  </span>
   <span class="spacer"></span>
-  <!-- <button mat-button [routerLink]="['/about']">Om</button> -->
-  <button mat-button [routerLink]="['/home']">Hjem</button>
+  <button mat-button [routerLink]="['/food-waste']">Madspild</button>
+  <button mat-button [routerLink]="['/about']">Om</button>
 </mat-toolbar>
