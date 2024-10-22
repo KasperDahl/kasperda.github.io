@@ -2,7 +2,7 @@
 @use 'variables' as vars;
 
 // Define your typography
-$gut-guide-typography: mat.define-typography-config(
+$global-style-typography: mat.define-typography-config(
   $font-family: 'Roboto, "Helvetica Neue", sans-serif',
   $headline-1:
     mat.define-typography-level(96px, 96px, 300, $letter-spacing: -1.5px),
@@ -13,7 +13,7 @@ $gut-guide-typography: mat.define-typography-config(
 
 // You can also define general typography styles here
 body {
-  font-family: mat.font-family($gut-guide-typography);
+  font-family: mat.font-family($global-style-typography);
 }
 
 .text-center {

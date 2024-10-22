@@ -8,9 +8,9 @@
 @include mat.core();
 
 // Include theme styles for Angular Material
-@include mat.all-component-themes(vars.$gut-guide-theme);
+@include mat.all-component-themes(vars.$global-style-theme);
 
 // Include custom button styles
-@include buttons.custom-button(vars.$gut-guide-theme);
+@include buttons.custom-button(vars.$global-style-theme);
 
 // You can add any additional global styles here

@@ -1,0 +1,8 @@
+@use '@angular/material' as mat;
+@use 'index' as *;
+
+.about-container {
+    padding: 20px;
+    background-color: mat.get-color-from-palette($global-style-primary, 50);
+    color: mat.get-color-from-palette($global-style-primary, 900);
+  }
