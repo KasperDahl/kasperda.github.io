@@ -13,7 +13,9 @@ export const APP_CONFIG: AppConfig = {
       name: 'Cooking',
       description: 'Recipes, meal plans, and more',
       icon: 'restaurant',
-      url: 'https://cooking.kasperda.dk',
+      url: 'https://food-waste.kasperda.dk',
+
+
       requiresAuth: false,
       color: '#FF6B35',
     },
