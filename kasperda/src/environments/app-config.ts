@@ -22,7 +22,7 @@ export const APP_CONFIG: AppConfig = {
       name: 'Undgå madspild',
       description: 'Se tilbud i den lokale Netto',
       icon: 'eco',
-      url: 'https://madspild.kasperda.dk',
+      url: 'https://food-waste.kasperda.dk',
       requiresAuth: true,
       color: '#4CAF50',
     },
