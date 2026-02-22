@@ -20,7 +20,6 @@ kasperda/src/app/
 ├── components/
 │   ├── home/              # Landing page
 │   ├── about/             # About page
-│   ├── food-waste/        # Madspild page
 │   ├── footer/            # Site footer
 │   └── apps/              # Apps hub page
 │       ├── apps.component.*
@@ -31,7 +30,7 @@ kasperda/src/app/
 │   └── auth.service.ts    # Cloudflare Access auth (cookie-based)
 ├── models/
 │   └── app-config.model.ts  # TypeScript interfaces
-├── app.routes.ts          # Routes: /home, /about, /food-waste, /apps
+├── app.routes.ts          # Routes: /home, /about, /apps
 ├── app.config.ts          # Angular providers
 └── app.component.*        # Root component (navbar + router-outlet + footer)
 
@@ -68,7 +67,7 @@ Floating button (bottom-right) only visible on localhost. Toggles the dev auth o
 - SCSS variables/breakpoints in `src/styles/_variables.scss`
 - Material theme: primary=blue, accent=pink, warn=red
 - Responsive mixin: `respond-to()` with breakpoints at 576/768/992/1200px
-- Navigation uses Danish labels (Madspild, Om) except "Apps"
+- Navigation uses Danish labels (Om) except "Apps"
 
 ## Build & Run
 
