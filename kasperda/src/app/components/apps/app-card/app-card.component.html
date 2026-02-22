@@ -1,0 +1,22 @@
+<mat-card
+  class="app-card"
+  [class.locked]="!isAccessible"
+  [matTooltip]="tooltipText"
+  (click)="onClick()"
+  (keydown.enter)="onClick()"
+  [attr.tabindex]="isAccessible ? 0 : -1"
+  [attr.role]="'button'"
+>
+  <div class="card-icon" [style.background-color]="isAccessible ? app.color : ''">
+    <mat-icon>{{ app.icon }}</mat-icon>
+    @if (!isAccessible) {
+      <div class="lock-overlay">
+        <mat-icon class="lock-icon">lock</mat-icon>
+      </div>
+    }
+  </div>
+  <mat-card-content>
+    <h3 class="app-name">{{ app.name }}</h3>
+    <p class="app-description">{{ app.description }}</p>
+  </mat-card-content>
+</mat-card>

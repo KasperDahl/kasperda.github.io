@@ -1,0 +1,63 @@
+.apps-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px 16px;
+}
+
+.apps-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 32px;
+
+  h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 500;
+  }
+
+  .subtitle {
+    margin: 4px 0 0;
+    color: #666;
+    font-size: 14px;
+  }
+}
+
+.auth-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  mat-icon {
+    margin-right: 4px;
+    font-size: 18px;
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.apps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.dev-toolbar {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  z-index: 1000;
+
+  button {
+    background-color: #fff3e0;
+    border-color: #ff9800;
+    font-size: 12px;
+
+    mat-icon {
+      font-size: 16px;
+      width: 16px;
+      height: 16px;
+      margin-right: 4px;
+    }
+  }
+}
