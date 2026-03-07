@@ -2,9 +2,7 @@ import { AppConfig } from '../app/models/app-config.model';
 
 export const APP_CONFIG: AppConfig = {
   cloudflare: {
-    loginUrl:
-      'https://kasperda.cloudflareaccess.com/cdn-cgi/access/login/*.kasperda.dk',
-    postLoginRedirectUrl: 'https://www.kasperda.dk/apps',
+    authTriggerUrl: 'https://food-waste.kasperda.dk',
     cookieName: 'CF_Authorization',
   },
 

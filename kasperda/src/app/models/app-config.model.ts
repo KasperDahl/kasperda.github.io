@@ -1,6 +1,5 @@
 export interface CloudflareConfig {
-  loginUrl: string;
-  postLoginRedirectUrl: string;
+  authTriggerUrl: string;
   cookieName: string;
 }
 

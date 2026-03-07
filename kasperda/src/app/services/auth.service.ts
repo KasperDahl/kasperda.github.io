@@ -47,8 +47,29 @@ export class AuthService {
   }
 
   login(): void {
-    const redirectUrl = encodeURIComponent(this.config.postLoginRedirectUrl);
-    window.location.href = `${this.config.loginUrl}?redirect_url=${redirectUrl}`;
+    const popup = window.open(
+      this.config.authTriggerUrl,
+      'cf-auth',
+      'width=500,height=600'
+    );
+
+    const pollInterval = setInterval(() => {
+      // Stop polling if popup was closed without completing auth
+      if (popup?.closed) {
+        clearInterval(pollInterval);
+        return;
+      }
+
+      const token = this.getCookie(this.config.cookieName);
+      if (token && !this.isTokenExpired()) {
+        clearInterval(pollInterval);
+        popup?.close();
+        this.updateAuthState();
+      }
+    }, 1000);
+
+    // Stop polling after 5 minutes
+    setTimeout(() => clearInterval(pollInterval), 5 * 60 * 1000);
   }
 
   logout(): void {
