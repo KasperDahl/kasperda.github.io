@@ -1,1 +1,14 @@
-<h2>No page yo</h2>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <script>
+    // GitHub Pages SPA redirect: stores the current path and redirects to /
+    // so index.html can restore the route before Angular bootstraps.
+    sessionStorage.redirect = location.href;
+    location.replace('/');
+  </script>
+</head>
+<body>
+</body>
+</html>
