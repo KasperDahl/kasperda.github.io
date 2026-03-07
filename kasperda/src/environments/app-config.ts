@@ -2,7 +2,7 @@ import { AppConfig } from '../app/models/app-config.model';
 
 export const APP_CONFIG: AppConfig = {
   cloudflare: {
-    loginUrl: 'https://kasperda.cloudflareaccess.com/cdn-cgi/access/login/kasperda',
+    loginUrl: 'https://kasperda.cloudflareaccess.com/cdn-cgi/access/login/kasperda?redirect_url=https://www.kasperda.dk/apps',
     postLoginRedirectUrl: 'https://www.kasperda.dk/apps',
     cookieName: 'CF_Authorization',
   },
