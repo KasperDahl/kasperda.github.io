@@ -3,6 +3,8 @@ export interface AppDefinition {
   name: string;
   description: string;
   icon: string;
+  /** Optional image icon; takes precedence over the Material `icon` when set. */
+  iconUrl?: string;
   url: string;
   color: string;
 }

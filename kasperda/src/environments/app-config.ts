@@ -19,6 +19,15 @@ export const APP_CONFIG: AppConfig = {
       color: '#4CAF50',
     },
     {
+      id: 'stocks',
+      name: 'Stocks',
+      description: 'Følg dine aktier og porteføljer',
+      icon: 'trending_up',
+      iconUrl: 'assets/icons/stocks/icon-192.png',
+      url: 'https://stocks.kasperda.dk',
+      color: '#009B72',
+    },
+    {
       id: 'test',
       name: 'Test',
       description: 'Cloudflare Access test page',
