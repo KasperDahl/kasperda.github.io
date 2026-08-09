@@ -6,7 +6,11 @@
   role="button"
 >
   <div class="card-icon" [style.background-color]="app.color">
-    <mat-icon>{{ app.icon }}</mat-icon>
+    @if (app.iconUrl) {
+      <img [src]="app.iconUrl" [alt]="app.name" />
+    } @else {
+      <mat-icon>{{ app.icon }}</mat-icon>
+    }
   </div>
   <mat-card-content>
     <h3 class="app-name">{{ app.name }}</h3>
